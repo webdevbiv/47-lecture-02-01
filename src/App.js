@@ -2,6 +2,7 @@ import Button, { ButtonWithStyled } from './components/Button/Button';
 import ListItem from './components/ListItem/ListItem';
 import { ButtonAnother } from './components/Button/Button';
 import Input from './components/Input/Input';
+import Toggle from './components/Toggle/Toggle';
 import './App.css';
 
 function App() {
@@ -11,10 +12,15 @@ function App() {
     { name: 'Steve', age: 34 },
     { name: 'Alex', age: 45 },
     { name: 'Maggy', age: 30 },
-
   ]
+  let mode = 'on';
+  setTimeout(() => (mode = 'off'), 5000)
   return (
     <div className="App">
+      <Toggle
+        mode={mode}
+      />
+      <br />
       <Input
         name="name"
         type="text"
