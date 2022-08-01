@@ -15,11 +15,11 @@ class Toggle extends Component {
     // }
     onClickBtn = () => {
         this.setState({ mode: !this.state.mode });
-        console.log('onClick', this.state);
+        // console.log('onClick', this.state);
     }
     onIncrement = () => {
         this.setState((prevState) => {
-            console.log({ prevState });
+            // console.log({ prevState });
             return {
                 number: prevState.number + 1
             }
@@ -28,14 +28,14 @@ class Toggle extends Component {
     onDecrement = () => {
         // this.setState((prevState) => ({ number: }))
         this.setState((prevState) => {
-            console.log({ prevState });
+            // console.log({ prevState });
             return {
                 number: prevState.number - 1
             }
         })
     }
     render() {
-        console.log(`state`, this.state);
+        // console.log(`state`, this.state);
         return (
             <>
                 <button

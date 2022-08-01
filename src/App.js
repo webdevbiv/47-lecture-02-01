@@ -3,6 +3,8 @@ import ListItem from './components/ListItem/ListItem';
 import { ButtonAnother } from './components/Button/Button';
 import Input from './components/Input/Input';
 import Toggle from './components/Toggle/Toggle';
+import ButtonClass from './components/ButtonClass/ButtonClass';
+import Card from './components/Card/Card';
 import './App.css';
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
   setTimeout(() => (mode = 'off'), 5000)
   return (
     <div className="App">
+      <Card />
+      <br />
       <Toggle
         mode={mode}
       />
